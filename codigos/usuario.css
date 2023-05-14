@@ -1,0 +1,19 @@
+
+body {
+    background-color: rgba(44, 57, 75, 1);
+}
+*{
+    font-family: 'Lexend', sans-serif;
+}
+body{
+  color: #fdfdff;
+}
+.navbar-custom {
+background-color: rgba(44, 57, 75, 1);
+}
+
+
+
+/*.navbar navbar-dark navbar-custom{
+
+}*/
