@@ -1,19 +1,237 @@
 
+@font-face {
+  font-family: "NeueKonstantGrotesk-Book";
+  src: url("NeueKonstantGrotesk-Book.otf") format("truetype");
+}
+
+
+
 body {
-    background-color: rgba(44, 57, 75, 1);
+  font-family: 'NeueKonstantGrotesk-Book', sans-serif;
+   padding: 0;
+   margin: 0;
+   background:rgba(44, 57, 75, 1);
 }
-*{
-    font-family: 'Lexend', sans-serif;
+  .container {
+    display: block;
+    margin-bottom: 2px;
+   
+    padding: none;
+  }
+  .container .container1 {
+/* Estilos do primeiro contêiner header */
+
+background-color:rgba(44, 57, 75, 1);
+padding: 10px;
 }
-body{
-  color: #fdfdff;
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: 'NeueKonstantGrotesk-Book', sans-serif;
 }
-.navbar-custom {
+
+.logo img {
+width: 100px; /* Defina o tamanho desejado para a imagem */
+margin-left: 20px;
+}
+
+.menu {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu li {
+margin-left: 50px; /* Espaçamento entre os itens do menu */
+margin-right: 35px;
+}
+
+.menu a {
+text-decoration: none;
+color: #ffffff;
+}
+
+/* Estilos para tornar o menu responsivo */
+@media screen and (max-width: 768px) {
+.header {
+  flex-direction: column;
+}
+
+.menu {
+  margin-top: 10px; /* Espaçamento entre o logo e o menu no modo responsivo */
+}
+
+.menu li {
+  margin-left: 0;
+  margin-bottom: 5px; /* Espaçamento vertical entre os itens do menu no modo responsivo */
+}
+}
+
+
+
+.container .container2 {
+  background-color:rgba(44, 57, 75, 1);
+/* Estilos do segundo contêiner usuario */
+  margin-top: 40px;
+  margin-bottom: 200px;
+  display: flex;
+  position: relative;
+} 
+
+.container .container3 {
+/* Estilos do terceiro contêiner text em baixo do ing*/
+background-color:rgba(44, 57, 75, 1);
+margin-top: 20px;
+margin-left: 50px;
+}
+
+.container .container4{
+/* Estilos do quarto contêiner ingresso*/
 background-color: rgba(44, 57, 75, 1);
+margin-top: 20px;
+margin-bottom: 100px;
+width: 95%;
+
+}
+/* estilo do ingresso  */
+.container .container4 .flex-ingresso {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: normal;
+align-items: normal;
+align-content: normal;
+background-color: rgba(58, 88, 110, 1);
+margin-bottom: 50px;
+margin-left:50px;
+}
+.container .container4 .flex-ingresso_2 {
+display: flex;
+margin-top: 10px;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: normal;
+align-items: normal;
+align-content: normal;
+background-color: rgba(58, 88, 110, 1);
+margin-left:50px;
 }
 
+.container .container4 .flex-tex:nth-child(1) {
+display: block;
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+align-self: auto;
+order: 0;
+}
+
+.container .container4 .flex-num:nth-child(2) {
+display: block;
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+align-self: auto;
+order: 0;
+}
+
+.container .container4 .flex-botao:nth-child(3) {
+display: block;
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+align-self: auto;
+order: 0;
+}
+
+.container .container5 {
+background-color: #082032; /* Definir a cor de fundo do .container5 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container5 p {
+color: #ffffff; /* Definir a cor do texto do elemento <p> */
+text-align: center; /* Centralizar o texto dentro do elemento <p> */
+margin-top: 20px;
+}   
+/* estilo do usuario  */
+.box-imag{
+  width: 50%;
+  height: 50%;
+}
+.box-imag > img{
+margin-left: 40px;
+}
+.text-left{
+  text-align: left;
+  width: 50%;
+  height: 50%;
+ margin-left: -8%;
+
+}
+
+.btn_btn-excluir, .btn_btn-editar{
+  font-family: 'NeueKonstantGrotesk-Book', sans-serif;    
+  background: #FF4C29;
+  display: inline-block;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  color: #7e0b0b;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+ /* estilo do ingresso  */
+
+ .flex-tex{
+  color: hsl(0, 0%, 99%);
+  margin-right: 80px;
+  margin-left: 30px;
+ }
+ .flex-num{
+  color: hsl(0, 0%, 100%);
+  margin-top: 30px;
+  margin-right: 250px;
+ }
+ .flex-botao .btn_btn-cancelar{
+  margin-top: 70px;
+  font-family: 'NeueKonstantGrotesk-Book', sans-serif;    
+  background: #FF4C29;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  color: #7e0b0b;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+ }
 
 
-/*.navbar navbar-dark navbar-custom{
-
-}*/
+ p{
+  color: aliceblue;
+ }
+ h2 , h1 {
+  color: rgba(255, 76, 41, 1);
+ }
+ hr{
+border-top-color:#78a2ee; /* Define a cor da hr */
+opacity:2;
+height: 1px; /* Define a altura da hr */
+width: 50%; /* Define a largura da hr */
+margin: 0 auto; /* Centraliza a hr horizontalmente */
+} 
